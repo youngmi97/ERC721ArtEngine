@@ -5,9 +5,9 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "GOMZ First Generation";
+const description = "These are the pioneers. The first comers.";
+const baseUri = "ipfs://Qmc5H7kvbfbkgi7QH7i6uTPDUpFYz6FkyCcbDg4DSGNprL";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -24,15 +24,15 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 20,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "background" },
+      { name: "base" },
+      { name: "fur" },
+      { name: "head" },
+      { name: "eyes" },
+      { name: "mouth" },
+      { name: "clothes" },
     ],
   },
 ];
@@ -71,8 +71,9 @@ const pixelFormat = {
   ratio: 2 / 128,
 };
 
+// for auto generating background
 const background = {
-  generate: true,
+  generate: false,
   brightness: "80%",
   static: false,
   default: "#000000",

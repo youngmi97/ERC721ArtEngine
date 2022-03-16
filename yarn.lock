@@ -29,6 +29,11 @@ agent-base@6:
   dependencies:
     debug "4"
 
+all@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/all/-/all-0.0.0.tgz#fb2aa75d4759d40e39ecbb118fabf0cc11ff554f"
+  integrity sha1-+yqnXUdZ1A457LsRj6vwzBH/VU8=
+
 ansi-regex@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-3.0.0.tgz#ed0317c322064f79466c02966bddb605ab37d998"
