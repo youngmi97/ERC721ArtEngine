@@ -1,5 +1,7 @@
 # Logs
-
+/build
+/layers
+/Hidden Image
 logs
 _.log
 npm-debug.log_

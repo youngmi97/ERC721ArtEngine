@@ -5,17 +5,18 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "GOMZ First Generation";
-const description = "These are the pioneers. The first comers.";
-const baseUri = "ipfs://Qmc5H7kvbfbkgi7QH7i6uTPDUpFYz6FkyCcbDg4DSGNprL";
+const namePrefix = 'Webe';
+const description =
+  'Webe is a cultural franchise dedicated to young, WEirD innovators.';
+const baseUri = 'ipfs://QmYfkJVjZa5HLAzpy4txhwPX45UfWHTkz9X6n4pcZbveB7/';
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: 'YC',
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: 'https://www.youtube.com/c/hashlipsnft',
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: '7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC',
       share: 100,
     },
   ],
@@ -24,15 +25,15 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 20,
+    growEditionSizeTo: 17768,
     layersOrder: [
-      { name: "background" },
-      { name: "base" },
-      { name: "fur" },
-      { name: "head" },
-      { name: "eyes" },
-      { name: "mouth" },
-      { name: "clothes" },
+      { name: 'background' },
+      { name: 'basic' },
+      { name: 'fur' },
+      { name: 'clothes' },
+      { name: 'eyes' },
+      { name: 'accessories' },
+      { name: 'mouth' },
     ],
   },
 ];
@@ -56,15 +57,15 @@ const gif = {
 
 const text = {
   only: false,
-  color: "#ffffff",
+  color: '#ffffff',
   size: 20,
   xGap: 40,
   yGap: 40,
-  align: "left",
-  baseline: "top",
-  weight: "regular",
-  family: "Courier",
-  spacer: " => ",
+  align: 'left',
+  baseline: 'top',
+  weight: 'regular',
+  family: 'Courier',
+  spacer: ' => ',
 };
 
 const pixelFormat = {
@@ -74,14 +75,14 @@ const pixelFormat = {
 // for auto generating background
 const background = {
   generate: false,
-  brightness: "80%",
+  brightness: '80%',
   static: false,
-  default: "#000000",
+  default: '#000000',
 };
 
 const extraMetadata = {};
 
-const rarityDelimiter = "#";
+const rarityDelimiter = '#';
 
 const uniqueDnaTorrance = 10000;
 
@@ -89,16 +90,16 @@ const preview = {
   thumbPerRow: 5,
   thumbWidth: 50,
   imageRatio: format.height / format.width,
-  imageName: "preview.png",
+  imageName: 'preview.png',
 };
 
 const preview_gif = {
   numberOfImages: 5,
-  order: "ASC", // ASC, DESC, MIXED
+  order: 'ASC', // ASC, DESC, MIXED
   repeat: 0,
   quality: 100,
   delay: 500,
-  imageName: "preview.gif",
+  imageName: 'preview.gif',
 };
 
 module.exports = {
